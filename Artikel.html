@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="app.css" type="text/css" />
+
+</head>
+<body >
+    <script>
+        function viewImage(a) {
+            var t = document.getElementById('open-image').style.visibility = 'visible';
+            var v = document.getElementById('view').innerHTML = "<img src='image/" + a + "'  /> ";
+            var d = document.getElementById('image').classList.add('image');
+        }
+        function closeViewImage(a) {
+            var d = document.getElementById('image').classList.add('image');
+            var t = document.getElementById('open-image').style.visibility = 'hidden';
+        }
+    </script>
+    <header>
+        <ul>
+            <li> <a href="#home">Home</a> </li>
+            <li> <a href="#page2">Gambar</a> </li>
+            <li> <a href="#info">Info</a> </li>
+            <li> <a href="#layanan">Layanan</a></li>
+        </ul>
+    </header>
+    <div id="image">
+        <div class="open-image" id="open-image">
+            <br /><br /><br />
+            <button onclick="closeViewImage()">CLOSE</button>
+            <center>
+                <div class="view" id="view">
+                    <img src="image/3D.jpg" />
+
+                </div>
+            </center>
+        </div>
+    </div>
+    <div class="parallax" id='home'>
+        <div class="konten">
+            <center>
+                <div class="text">
+                    <h1>Amazing 3D Art</h1>
+                    <p style="color:#fff;width :600px;">Nikmati Semua  berbagai gambar 3D yang kami sediakan
+                    disini dan anda juga bebas untuk mendownload nya secara
+                    free, Bagikan dan tunjukan kepada teman anda</p>
+
+                </div>
+
+            </center>
+        </div>
+    </div>
+    <div class="page2" id="page2">
+        <br /><br />
+        <center>
+            <h1 style="font-family :'Cambria', sans-serif;color:#fff;font-size:40px;">Gambar Tebaik Bulan Ini</h1>
+        </center>
+        <div class="gallery">
+
+            <div class="conten" onclick="viewImage('1.jpg')">
+                <img src="image/1.jpg" />
+            </div>
+            <div class="conten"  onclick="viewImage('2.jpg')">
+                <img src="image/2.jpg" />
+            </div>
+            <div class="conten" onclick="viewImage('3.jpg')">
+                <img src="image/3.jpg" />
+            </div>
+            <div class="conten" onclick="viewImage('4.jpg')">
+                <img src="image/4.jpg" />
+            </div>
+
+            <div class="conten" onclick="viewImage('5.jpg')">
+                <img src="image/5.jpg" />
+            </div>
+            <div class="conten" onclick="viewImage('6.jpg')">
+                <img src="image/6.jpg" />
+            </div>
+            <div class="conten" onclick="viewImage('7.jpg')">
+                <img src="image/7.jpg" />
+            </div>
+            <div class="conten" onclick="viewImage('8.jpg')">
+                <img src="image/8.jpg" />
+            </div>
+            <div class="conten" onclick="viewImage('9.jpg')">
+                <img src="image/9.jpg" />
+            </div>
+            <div class="conten" onclick="viewImage('10.jpg')">
+                <img src="image/10.jpg" />
+            </div>
+            <div class="conten" onclick="viewImage('11.jpg')">
+                <img src="image/11.jpg" />
+            </div>
+            <div class="conten" onclick="viewImage('12.jpg')">
+                <img src="image/12.jpg" />
+            </div>
+           
+        </div>
+        </div>
+    <div class="parallax2" id='info'>
+
+        <div class="konten">
+            <center>
+                <div class="text">
+                    <h1>Amazing 3D Art</h1>
+                    <p style="color:#fff;width :600px;">
+                        Nikmati Semua  berbagai gambar 3D yang kami sediakan
+                        disini dan anda juga bebas untuk mendownload nya secara
+                        free, Bagikan dan tunjukan kepada teman anda
+                    </p>
+
+                </div>
+
+            </center>
+        </div>
+    </div>
+	
+	<div class="page2" width='600px' id="layanan">
+	     <br /><br />
+		<center>
+            <h1 style="font-family :'Cambria', sans-serif;color:#fff;font-size:40px;">Kirim Email ke Pembuat Web</h1>
+			<p style="color:#fff;width :600px;">
+                        Jika anda ada pertanyaan, saran dan kritik
+						bisa menghubungi di form di bawah ini.
+						Kami akan memberikan jawaban secepatnya
+                    </p>
+					<br/>
+		<form>
+		<textarea name='text'>
+		</textarea>
+		<br/><br/>
+		<input type='submit' class='kirim' name='submit' value='Kirim'/>
+		</form>
+		
+			<p style="font-family :'Cambria', sans-serif;color:#fff;padding-top:200px;font-size:18px;"> @Created By Alfi</p>
+		</center>
+    </div>
+</body>
+</html>

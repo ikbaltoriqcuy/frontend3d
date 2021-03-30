@@ -1,0 +1,252 @@
+﻿body {
+    font-family: 'Segoe UI', sans-serif;
+    margin:0px;
+}
+
+header ul {
+    margin-top: 100px;
+    list-style-type: none;
+    position: fixed;
+}
+
+header li{    
+  float : left;	
+}
+
+header  a {
+	padding : 7px 40px;
+	display : block;
+	text-decoration: none;
+    font-size : 20px;  
+	color : #fff;
+}
+
+header a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+@keyframes f {
+    0% {
+        opacity : 1;
+    }
+    100% {
+        opacity : 0;
+    }
+}
+
+.b {
+animation-name :f ;
+animation-duration : 3s;
+}
+
+span {
+    font-style: italic;
+}
+
+.page1 {
+}
+
+    .page1 video {
+		margin-left:200px;
+        width :800px;
+    }
+
+    .page1 .info {
+        height : 100%;
+        width : 600px;
+        padding: 0px 0px 20px 20px;
+        box-shadow : 0px 0px 1px 1px rgba(80,80,80,.3);
+		border-radius:10px;
+    }
+
+        .page1 .info h1 {
+            font-family : 'Cambria', sans-serif;
+            color:#808080;
+            font-size : 40px;
+        }
+
+        .page1 .info p {
+		    font-family : 'Cambria', sans-serif;
+		    font-size:20px;
+        }
+
+        .page1 #goto p {
+             padding: 10px 10px 10px 10px;
+			 background-color :#109bca;
+			 width : 300px;
+			 font-family : 'Cambria', sans-serif;
+			 font-size :20px;
+             margin-top :16px; 
+             margin-right :16px;
+             border-radius :8px;
+			 color:#fff;
+        }
+		
+		.page1 #goto p:hover{
+		    cursor:default;
+			background-color :#bca829;
+		}
+
+.judul {
+    width : 100%;
+   height : 30px;
+   background-color : #2b6aeb;
+}
+
+.parallax {
+    background-image: url('image/Creative-3D-Wallpaper.jpg');
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:rgba(80,80,80,.3);
+    margin-top:-100px;
+}
+.parallax2 {
+    
+    background-image: url('image/b.jpg');
+
+    min-height: 600px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:rgba(80,80,80,.3);
+    margin-top:-100px;
+}
+     .konten {
+        padding-top : 200px;
+        height : 600px;
+        width : 100%;
+        background-color: rgba(80,80,80,.5);  
+    }
+    
+     .konten .text h1 {
+       color : #fff;
+       font-size : 40px;
+       font-family : 'Cambria', sans-serif;
+
+    }
+
+.page2 {
+    width: 100%;
+    height: 1000px;
+    background-color: #39464a;
+}
+
+    .page2 .n {
+     border-top :10px solid #ff0000;
+    }
+
+    .page2 .gallery {
+        padding-top : 100px;
+        margin-left : 10px;
+    }
+
+        .page2 .gallery .conten {
+            float:left;
+            margin-left:10px;
+            box-shadow : 0px 0px 1px 1px rgba(80,80,80,.2);
+        }
+
+        
+        .page2 .gallery .conten img {
+            height : 200px;
+        }
+		@keyframes zoomOut{
+			0%{
+			 transform:scale(1);
+			}
+			100%{
+				 transform:scale(1.2);
+			}
+		}
+            .page2 .gallery .conten img:hover {
+             animation-name:zoomOut;
+			 animation-duration : .5s;
+			  transform:scale(1.2);
+            }
+
+.page3 {
+    width: 100%;
+    height: 1000px;
+    background-color: #39464a;
+}
+
+@keyframes opacityIn {
+    0% {
+        opacity : 0;
+    }
+    100% {
+        opacity : 1;
+    }
+}
+
+@keyframes opacityOut {
+    0% {
+        opacity : 1;
+    }
+    100% {
+        opacity : 0;
+    }
+}
+.image {
+     animation-name : opacityOut;
+    animation-duration : 2s;
+}
+
+.open-image {
+    position:fixed;
+    height:100%;
+    width : 100%;
+    background-color :rgba(80,80,80,.9);
+    visibility : hidden;
+    margin-top : 100px;    
+}
+    .open-image button {
+      border-radius : 2px;
+      border:1px solid #fff;
+      color: #fff;
+      background-color:rgba(80,80,80,0);
+      padding : 10px 14px;
+      float:right;
+      margin-right : 10px;
+    }
+        .open-image button:hover {
+              transform:scale(1.1);
+        
+         }
+
+    .open-image .view img {
+        background-color : #fff;
+        border-radius : 5px ;
+       height : 500px;
+    }
+	
+	textarea{
+		height:300px;
+		width : 600px;
+		padding:30px 30px;
+		 font-family : 'Cambria', sans-serif;
+		 font-size:20px;
+		 border:1px solid #fff;
+	}
+	
+	.kirim{
+		border-radius:30px;
+		padding:20px 60px;
+		border:1px solid #fff;
+		background-color :#19286b;
+			 font-family : 'Cambria', sans-serif;
+	
+		color: #fff;
+		font-size:20px;
+	}
+	
+	.kirim:hover{
+			background-color :#238190;
+	
+	}

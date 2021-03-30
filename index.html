@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="app.js"></script>
+</head>
+<body>
+    <script>
+        var b = true;
+        var n = 0;
+        function main() {
+            var n = document.getElementById('video');
+            var goto = document.getElementById('goto');
+            if (b) {
+                n.play();
+                b = false;
+                goto.innerHTML = "<p onclick='gotoArtikel()'> Upps, Salah!!! Coba Klik lagi</p>";
+            }
+        }
+        function sleep() {
+            n++;
+            setTimeout(sleep, 1000);
+            
+            if (n == 3) {
+                window.location.href = 'Artikel.html';
+            }
+        }
+        function gotoArtikel() {
+            var all = document.getElementById('all').classList.add("b");
+            sleep();
+            
+        }
+
+    </script>
+    <div id="all">
+        <div class="page1">
+			<center>
+            <video id="video">
+                <source src="stone.mp4" type="video/mp4" />
+            </video>
+			
+            <div class="info">
+                <div  id="hidden-text">
+                    <p></p>
+                </div>
+                <h1>Amazing 3D Art</h1>
+                <p> Kumpulan berbagai 3D Art Terbaik</p>
+                <div id="goto">
+                    <p onclick="main()"> Klik disini</p>
+                </div>
+            </div>
+			</center>
+        </div>
+    </div>
+     
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript">
+	$(document).ready(function(){
+		$(".page1").parallax("50%",0.1);
+		$(".page2").parallax("50%",0.7);
+	});
+    </script>
+</body>
+</html>
